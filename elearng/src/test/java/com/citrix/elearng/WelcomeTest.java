@@ -11,5 +11,6 @@ public class WelcomeTest extends BaseTest{
 	  welcomePage.navigateto(properties.getProperty("url"));
 	  String title = welcomePage.navigateToNextPage();
 	  assertTrue(title.contains("Browse eLearning | Citrix Education"));
+	  assertTrue(true);
   }
 }
