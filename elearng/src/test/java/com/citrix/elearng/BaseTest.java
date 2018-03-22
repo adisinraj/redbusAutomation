@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 
 /**
@@ -30,11 +31,14 @@ public class BaseTest{
 			} catch (IOException e) { 
 			e.printStackTrace();
 			}
-		//System.setProperty(properties.getProperty("driverkey"),properties.getProperty("driverpath"));
-	//	driver = new ChromeDriver();
-		System.setProperty("webdriver.firefox.port","4444");
-		driver = new FirefoxDriver();
+		System.setProperty(properties.getProperty("driverkey"),properties.getProperty("driverpath"));
+	   driver = new ChromeDriver();
+		//System.setProperty("webdriver.firefox.port","4444");
+		//driver = new FirefoxDriver();
 	}
 	
-	
+	@AfterMethod
+	public void quit(){
+		driver.quit();
+	}
 	}

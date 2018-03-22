@@ -21,5 +21,9 @@ public class WelcomePage extends BasePage{
 		return driver.getTitle();
 	}
 	
+	protected String getTitle(){
+		return driver.getTitle();
+		
+	}
 	
 }
