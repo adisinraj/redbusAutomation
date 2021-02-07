@@ -65,10 +65,10 @@ public class SearchResultPage extends BasePage {
 	@FindBy(css = "div.panels-container")
 	private WebElement panelContainer;
 
-	List<String> originalValue = new ArrayList();
-	List<String> sortedValue = new ArrayList();
-	List<Integer> originalFare = new ArrayList();
-	List<Integer> sortedFare = new ArrayList();
+	List<String> originalValue = new ArrayList<String>();
+	List<String> sortedValue = new ArrayList<String>();
+	List<Integer> originalFare = new ArrayList<Integer>();
+	List<Integer> sortedFare = new ArrayList<Integer>();
 
 	public boolean areBusesPresent() {
 		_wait(busSearchResult);
