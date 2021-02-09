@@ -56,7 +56,7 @@ public class BaseTest{
 			}
 		
 	if(browser.equalsIgnoreCase("chrome")){
-		  System.setProperty(properties.getProperty("chromedriverkey"),properties.getProperty("chromedriverpath"));
+		  System.setProperty(properties.getProperty("chromedriverkey"),System.getProperty("user.dir")+properties.getProperty("chromedriverpath"));
 		  ChromeOptions options = new ChromeOptions();
 		  options.addArguments("--disable-notifications");
 		  driver = new ChromeDriver(options);
