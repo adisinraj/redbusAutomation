@@ -15,7 +15,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -77,7 +76,7 @@ public class BaseTest{
 	public void quit(){
 	//	driver.quit();
 	//	eventFiringWebDriver.close();
-	//	eventFiringWebDriver.quit();
+		eventFiringWebDriver.quit();
 		
 	}
 		
