@@ -20,84 +20,38 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src/main/utilities"/>
-	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/Ansul/.m2/repository/org/testng/testng/6.8/testng-6.8.jar" sourcepath="C:/Users/Ansul/.m2/repository/org/testng/testng/6.8/testng-6.8-sources.jar">
-		<attributes>
-			<attribute name="test" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.testng"/>
-			<attribute name="maven.artifactId" value="testng"/>
-			<attribute name="maven.version" value="6.8"/>
-			<attribute name="maven.scope" value="test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Ansul/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar" sourcepath="C:/Users/Ansul/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3-sources.jar">
-		<attributes>
-			<attribute name="test" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="com.sun.xml.bind"/>
-			<attribute name="maven.artifactId" value="jaxb-impl"/>
-			<attribute name="maven.version" value="2.3.3"/>
-			<attribute name="maven.scope" value="test"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
-			<attribute name="module" value="true"/>
-			<attribute name="owner.project.facets" value="java"/>
+			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Ansul/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar" sourcepath="C:/Users/Ansul/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15-sources.jar">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_281"/>
+	<classpathentry kind="src" path="target/generated-sources/annotations">
 		<attributes>
+			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="net.bytebuddy"/>
-			<attribute name="maven.artifactId" value="byte-buddy"/>
-			<attribute name="maven.version" value="1.8.15"/>
-			<attribute name="maven.scope" value="compile"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Ansul/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar" sourcepath="C:/Users/Ansul/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre-sources.jar">
+	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
 		<attributes>
+			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="com.google.guava"/>
-			<attribute name="maven.artifactId" value="guava"/>
-			<attribute name="maven.version" value="25.0-jre"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Ansul/.m2/repository/net/bytebuddy/byte-buddy/1.9.10/byte-buddy-1.9.10.jar" sourcepath="C:/Users/Ansul/.m2/repository/net/bytebuddy/byte-buddy/1.9.10/byte-buddy-1.9.10-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
 			<attribute name="test" value="true"/>
-			<attribute name="maven.groupId" value="net.bytebuddy"/>
-			<attribute name="maven.artifactId" value="byte-buddy"/>
-			<attribute name="maven.version" value="1.9.10"/>
-			<attribute name="maven.scope" value="test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Ansul/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar" sourcepath="C:/Users/Ansul/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.glassfish"/>
-			<attribute name="maven.artifactId" value="jakarta.el"/>
-			<attribute name="maven.version" value="3.0.3"/>
-			<attribute name="maven.scope" value="provided"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Ansul/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar" sourcepath="C:/Users/Ansul/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
-			<attribute name="maven.groupId" value="org.assertj"/>
-			<attribute name="maven.artifactId" value="assertj-core"/>
-			<attribute name="maven.version" value="3.11.1"/>
-			<attribute name="maven.scope" value="test"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
