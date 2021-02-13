@@ -3,17 +3,16 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.atmecs</groupId>
-	<artifactId>automationPractice</artifactId>
+	<groupId>com.redbus</groupId>
+	<artifactId>RedBusAutomation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>automationPractice</name>
+	<name>RedBusAutomation</name>
 	<url>http://maven.apache.org</url>
 
 
 	<profiles>
 		<profile>
-			<id>testProp</id>
 			<build>
 
 				<plugins>
@@ -26,103 +25,8 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-compiler-plugin</artifactId>
-						<configuration>
-							<includes>
-								<include>src/main/*</include>
-							</includes>
-						</configuration>
 					</plugin>
 
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-antrun-plugin</artifactId>
-						<version>1.1</version>
-						<executions>
-							<execution>
-								<id>id.pre-clean</id>
-								<phase>pre-clean</phase>
-								<goals>
-									<goal>run</goal>
-								</goals>
-								<configuration>
-									<tasks>
-										<echo>This is the pre-clean phase</echo>
-									</tasks>
-								</configuration>
-							</execution>
-
-							<execution>
-								<id>id.clean</id>
-								<phase>clean</phase>
-								<goals>
-									<goal>run</goal>
-								</goals>
-								<configuration>
-									<tasks>
-										<echo>Now clean phase is running</echo>
-									</tasks>
-								</configuration>
-							</execution>
-
-							<execution>
-								<id>id.post-clean</id>
-								<phase>post-clean</phase>
-								<goals>
-									<goal>run</goal>
-								</goals>
-								<configuration>
-									<tasks>
-										<echo>this message is in post-clean phase</echo>
-									</tasks>
-								</configuration>
-							</execution>
-
-							<execution>
-								<id>id.test</id>
-								<phase>test</phase>
-								<goals>
-									<goal>run</goal>
-								</goals>
-								<configuration>
-									<tasks>
-										<echo>test phase</echo>
-										<echo>we are using env.test.properties file in test phase</echo>
-										<!-- <copy file="src/main/resources/env.test.properties" tofile="C:\Users\Aditya_Rajput\git\redbusAutomation\RedBusAutomation\target\env.properties" 
-											></copy> -->
-										<copy file="src/main/resources/env.test.properties"
-											tofile="${project.build.outputDirectory}/env.properties" />
-
-									</tasks>
-								</configuration>
-							</execution>
-
-							<execution>
-								<id>id.package</id>
-								<phase>package</phase>
-								<goals>
-									<goal>run</goal>
-								</goals>
-								<configuration>
-									<tasks>
-										<echo>package phase</echo>
-									</tasks>
-								</configuration>
-							</execution>
-
-							<execution>
-								<id>id.deploy</id>
-								<phase>deploy</phase>
-								<goals>
-									<goal>run</goal>
-								</goals>
-								<configuration>
-									<tasks>
-										<echo>deploy phase</echo>
-									</tasks>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-site-plugin</artifactId>
@@ -136,34 +40,6 @@
 				</plugins>
 			</build>
 
-		</profile>
-
-		<profile>
-			<id>prodProp</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-antrun-plugin</artifactId>
-						<version>1.1</version>
-						<executions>
-							<execution>
-								<phase>test</phase>
-								<goals>
-									<goal>run</goal>
-								</goals>
-								<configuration>
-									<tasks>
-										<echo>Using env.test.properties</echo>
-										<copy file="src/main/resources/env.prod.properties"
-											tofile="${project.build.outputDirectory}/env.properties" />
-									</tasks>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
 		</profile>
 	</profiles>
 	<properties>
